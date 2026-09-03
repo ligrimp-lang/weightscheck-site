@@ -1,0 +1,130 @@
+/* Four & Six — the smallest site that satisfies Apple and doesn't embarrass the app. */
+
+:root {
+  --ink: #e8e6e1;
+  --ink-dim: #9c9892;
+  --bg: #0e0f12;
+  --rule: #24262b;
+  --accent: #7fa9c9;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.5rem 6rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 17px/1.65 ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 5rem 0 3rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 3rem;
+}
+
+header p {
+  color: var(--ink-dim);
+  margin: 0.4rem 0 0;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2.75rem 0 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+p, li { color: var(--ink); }
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover { color: var(--ink); }
+
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.6rem; }
+
+.dim { color: var(--ink-dim); }
+
+.updated {
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* The one thing on the page that is asking for something. Quiet, but unmissable. */
+.cta {
+  margin: 2.75rem 0 0;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.cta a:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.cta-note {
+  margin: 0.9rem 0 0;
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+}
+
+nav {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+nav a { margin-right: 1.5rem; }
+
+footer {
+  margin-top: 4.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-dim);
+  font-size: 0.9rem;
+}
+
+footer a { color: var(--ink-dim); }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2.25rem 0 0.6rem;
+}
